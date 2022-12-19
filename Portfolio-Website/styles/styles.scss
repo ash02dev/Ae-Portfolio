@@ -108,9 +108,9 @@ section{
     justify-content: center;
     transform: translateY(-50%);
     
+    
     .active-btn{
         background-color: var(--color-secondary) !important;
-        transition: all .4s ease-in-out;
         i{
             color: var(--color-white) !important;
         }
@@ -127,16 +127,19 @@ section{
         align-items: center;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
+        
         &:hover{
             background-color: var(--color-grey5);
             i{
                 color: var(--color-white)
             }
+            animation: jello 1.5s ease 0s 1 normal forwards;
         }
         i{
             font-size: 1.2rem;
             color: var(--color-grey2);
             pointer-events: none;
+            
         }
     }
 }
@@ -161,6 +164,7 @@ section{
             z-index: -1;
             -webkit-clip-path: inset(10px round 80px 20px 30px 10px);
             clip-path: inset(10px round 20px 20px 20px 20px);
+            animation: jello 1.5s ease 0s 1 normal forwards;
         }
         .image{
             border-radius: 20px 20px 20px 20px;
@@ -175,10 +179,6 @@ section{
                 border-radius: 20px 20px 20px 20px;
                 object-fit: cover;
                 transition: all .4s ease-in-out;
-                filter: grayscale(100%);
-                &:hover{
-                    filter: grayscale(0%);
-                }
             }
         }
     }
@@ -187,19 +187,23 @@ section{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 18rem;
+        padding-right: 12.5rem;
         .name{
-            font-size: 3rem;
+            font-size: 2.25rem;
+            line-height: 3rem;
             span{
+                font-size: 5rem;
                 color: var(--color-secondary);
-            }
+                text-align: right !important;
+            }            
         }
         p{
-            margin: 1.5rem 0;
+            margin: 2.5rem 0;
             line-height: 2rem;
         }
     }
 }
+
 
 /*About*/
 .about-container{
@@ -317,8 +321,21 @@ section{
                     .vue{
                         width: 50%;
                     }
-                    .sql{
+                    .psql{
                         width: 70%;
+                    }
+                    //future skills
+                    .php{
+                        width: 0%;
+                    }
+                    .sql{
+                        width: 0%;
+                    }
+                    .pyth{
+                        width: 00%;
+                    }
+                    .tab{
+                        width: 0%;
                     }
                 }
             }
@@ -643,6 +660,7 @@ section{
                 i{
                     color: var(--color-primary)
                 }
+                animation: jello 1.5s ease 0s 1 normal forwards;
             }
             i{
                 display: flex;
@@ -653,37 +671,37 @@ section{
         }
     }
 
-    .right-contact{
-        flex: 3;
-        margin-left: 3rem;
-        .input-control{
-            margin: 1.5rem 0;
+    // .right-contact{
+    //     flex: 3;
+    //     margin-left: 3rem;
+    //     .input-control{
+    //         margin: 1.5rem 0;
             
-            input, textarea{
-                border-radius: 30px;
-                font-weight: inherit;
-                font-size: inherit;
-                font-family: inherit;
-                padding: .8rem 1.1rem;
-                outline: none;
-                border: none;
-                background-color: var(--color-grey5);
-                width: 100%;
-                color: var(--color-white);
-                resize: none;
-            }
-        }
-        .i-c-2{
-            display: flex;
-            :last-child{
-                margin-left: 1.5rem;
-            }
-        }
-        .submit-btn{
-            display: flex;
-            justify-content: flex-start;
-        }
-    }
+    //         input, textarea{
+    //             border-radius: 30px;
+    //             font-weight: inherit;
+    //             font-size: inherit;
+    //             font-family: inherit;
+    //             padding: .8rem 1.1rem;
+    //             outline: none;
+    //             border: none;
+    //             background-color: var(--color-grey5);
+    //             width: 100%;
+    //             color: var(--color-white);
+    //             resize: none;
+    //         }
+    //     }
+    //     .i-c-2{
+    //         display: flex;
+    //         :last-child{
+    //             margin-left: 1.5rem;
+    //         }
+    //     }
+    //     .submit-btn{
+    //         display: flex;
+    //         justify-content: flex-start;
+    //     }
+    // }
 }
 
 .main-title{
