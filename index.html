@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/cloud-bg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,17 +73,17 @@
                 <div class="right-about">
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">3+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
                             <p class="large-text">2023 </p>
-                            <p class="small-text">AWS Certification <br />Cloud Practitioner</p>
+                            <p class="small-text">AWS Certified <br /> Cloud Practitioner</p>
                         </div>
                     </div>
                     <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">2022 </p>
+                            <p class="small-text">Tech Elevator <br /> Graduate</p>
+                        </div>
+                    </div>
+                <!--<div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">2022 </p>
                             <p class="small-text">Tech Elevator <br /> Graduate</p>
@@ -93,7 +94,13 @@
                             <p class="large-text">2022 </p>
                             <p class="small-text">Tech Elevator <br /> Graduate</p>
                         </div>
-                    </div>
+                    </div>> -->  
+                    <div class="about-stats certs">
+                        <h4 class="stat-title">AWS Cloud Certification</h4>
+                        <div class="aws-ccp-badge">
+                        <a target="_blank" href="https://www.credly.com/badges/c0ccba5a-9e9c-488b-926e-6ade6d9ebb04/public_url">
+                            <img class="aws-badge" src="img\aws-certified-cloud-practitioner_small.png"/></a>
+                        </div>
                 </div>
             </div>
             <div class="about-stats">
@@ -154,13 +161,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title">AWS Cloud Certification</h4>
-                <div data-iframe-width="150" data-iframe-height="270" 
-                data-share-badge-id="c0ccba5a-9e9c-488b-926e-6ade6d9ebb04" 
-                data-share-badge-host="https://www.credly.com"></div>
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            </div>   
             </div>
             <h4 class="stat-title">My Work History</h4>
             <div class="timeline">
@@ -211,7 +212,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2017 - 2019</p>
-                    <h5>Public Safety Communications Service Officer<span> - Augusta University</span></h5>
+                    <h5>Communications Service Officer<span> - Augusta University</span></h5>
                     <p>
                         <ul>
                             <li class="tl-bullet">Collected necessary information from emergency calls to address the emergent concerns.</li>
@@ -256,12 +257,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img\puppycat.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Calendar App <br>COMING SOON</h3>
+                        <div class="icons">
+                            <a href="https://github.com/ash02dev/" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img\puppycat.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Quest Menu <br>COMING SOON</h3>
+                        <div class="icons">
+                            <a href="https://github.com/ash02dev/" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section> 
-        <!-- <section class="section sec4" id="blogs">
+        <section class="section sec4 blog-section" id="blogs">
             <div class="blogs-content">
                 <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                    <h2>Ash <span>In The Cloud</span><span class="bg-text">Ash In The Cloud</span></h2>
                 </div>
                 <div class="blogs">
                     <div class="blog">
@@ -298,7 +325,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="section sec5" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -337,32 +364,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="right-contact">
-                        <form action="mailto:ashleygills02@gmail.com" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="text" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="YOUR SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea rows="15" cols="18" placeholder="MESSAGE"></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn" target="_blank">
-                                    <button type="submit"></button>
-                                    <span class="btn-text">Submit</span>
-                                    <span class="btn-icon"><i class="fas fa fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div> -->
                 </div>
             </div>
         </section>
     </main>
 
+    
+    <!--STARS-->
     <div class="controls">
         <div class="control control-1 active-btn flip-2-hor-top-2" data-id="home">
             <i class="fas fa-home"></i>
@@ -373,9 +381,9 @@
         <div class="control control-3 flip-2-hor-top-2" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
-        <!-- <div class="control control-4 flip-2-hor-top-2" data-id="blogs">
+        <div class="control control-4 flip-2-hor-top-2" data-id="blogs">
             <i class="fas fa-solid fa-pen"></i>
-        </div> -->
+        </div>
         <div class="control control-5 flip-2-hor-top-2" data-id="contact">
             <i class="fas fa-solid fa-address-card"></i>
         </div>

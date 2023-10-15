@@ -274,6 +274,11 @@ section {
   text-transform: uppercase;
 }
 
+.about-stats .certs {
+  display: grid;
+  grid-template-columns: 2fr;
+}
+
 .about-stats {
   padding-bottom: 4rem;
 }
@@ -362,6 +367,10 @@ section {
   height: 1px;
   background-color: var(--color-grey5);
   transform: translateX(-50%);
+}
+
+.aws-badge {
+  position: right;
 }
 
 /*Timeline*/

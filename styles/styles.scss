@@ -553,6 +553,8 @@ section{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
+
+    
     .blog{
         position: relative;
         background-color: var(--color-grey5);
@@ -670,6 +672,8 @@ section{
             }
         }
     }
+
+
 
     // .right-contact{
     //     flex: 3;
