@@ -274,9 +274,9 @@ section {
   text-transform: uppercase;
 }
 
-.about-stats .certs {
-  display: grid;
-  grid-template-columns: 2fr;
+.about-certs {
+  display: center !important;
+  grid-template-columns: 1fr;
 }
 
 .about-stats {
